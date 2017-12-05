@@ -1,3 +1,5 @@
+package To_Team_Killassin;
+
 import java.util.Scanner;
 public class ShuffleTest 
 {

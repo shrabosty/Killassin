@@ -1,3 +1,5 @@
+package To_Team_Killassin;
+
 import java.util.Scanner;
 public class PlayKillassin {
 	
@@ -54,13 +56,31 @@ public class PlayKillassin {
 						+"\nPlayer3: "+scoreOfPlayer3+"\nPlayer4: "+scoreOfPlayer4);
 	}
 	
-	public void showPolice(String name1,String name2,String name3,String name4)
+	public String showPolice(String name1,String name2,String name3,String name4)
 	{
-		if(name1.equals("Police")) System.out.println("Player1: Police");
-		if(name2.equals("Police")) System.out.println("Player2: Police");
-		if(name3.equals("Police")) System.out.println("Player3: Police");
-		if(name4.equals("Police")) System.out.println("Player4: Police");
-	}
+            String str="";
+            if(name1.equals("Police")) 
+                {
+                   // System.out.println("Player1: Police");
+                    str=name1;
+                }
+        	if(name2.equals("Police")) 
+                {
+                    //System.out.println("Player2: Police");
+                    str= name2;
+                }
+		if(name3.equals("Police"))
+                {
+                    //System.out.println("Player3: Police");
+                    str= name3;
+                }
+		if(name4.equals("Police")) 
+                {
+                    //System.out.println("Player4: Police");
+                    str= name4;
+                }
+                return str;
+        }
 	public void showFriend(String name1,String name2,String name3,String name4)
 	{
 		if(name1.equals("Friend")) System.out.println("Player1: Friend");
@@ -123,4 +143,3 @@ public class PlayKillassin {
 		}
 	}
 }
- 
